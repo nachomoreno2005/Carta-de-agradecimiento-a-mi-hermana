@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Para Vilma ❤️</title>
+  <meta name="description" content="Carta virtual de agradecimiento para Vilma." />
+  <style>
+    :root{
+      --bg1:#0b1020;
+      --bg2:#120b24;
+      --card:#ffffff;
+      --ink:#1f2937;
+      --muted:#6b7280;
+      --accent:#7c3aed;
+      --accent2:#22c55e;
+      --shadow: 0 22px 60px rgba(0,0,0,.25);
+      --radius: 22px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(124,58,237,.35), transparent 55%),
+        radial-gradient(900px 500px at 85% 0%, rgba(34,197,94,.25), transparent 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(124,58,237,.22), transparent 60%),
+        linear-gradient(180deg, var(--bg1), var(--bg2));
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding: 28px 16px;
+    }
+
+    .wrap{width:min(920px, 100%)}
+
+    .header{
+      text-align:center;
+      margin-bottom:18px;
+      color:#fff;
+    }
+    .badge{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding: 10px 14px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 10px 30px rgba(0,0,0,.18);
+      font-weight:600;
+      letter-spacing:.2px;
+    }
+    .dot{
+      width:10px;height:10px;border-radius:50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 0 0 4px rgba(255,255,255,.10);
+    }
+    .title{
+      font-size: clamp(26px, 4vw, 42px);
+      margin: 14px 0 6px;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+    .subtitle{
+      margin:0;
+      color: rgba(255,255,255,.78);
+      font-size: 15px;
+    }
+
+    .card{
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+    .ribbon{
+      position:absolute;
+      inset:auto 0 0 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2), var(--accent));
+      opacity:.95;
+    }
+    .top{
+      padding: 26px 22px 0;
+      display:flex;
+      justify-content:space-between;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+    .to{
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+    }
+    .to small{color:var(--muted)}
+    .to strong{font-size:18px}
+    .meta{
+      text-align:right;
+      color:var(--muted);
+      font-size: 13px;
+      line-height:1.2;
+    }
+
+    .content{
+      padding: 18px 22px 22px;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+    .content p{margin: 0 0 14px}
+    .content p:last-child{margin-bottom:0}
+    .sign{
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid #eef2f7;
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+    .sig-left{
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+    }
+    .sig-left .name{
+      font-weight:800;
+      letter-spacing:.2px;
+    }
+    .hearts{
+      font-size: 18px;
+      opacity:.9;
+      user-select:none;
+    }
+
+    .actions{
+      padding: 0 22px 22px;
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    button{
+      appearance:none;
+      border:0;
+      border-radius: 999px;
+      padding: 12px 14px;
+      font-weight: 700;
+      cursor:pointer;
+      transition: transform .08s ease, filter .15s ease;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+    }
+    button:active{transform: scale(.98)}
+    .btn-primary{
+      background: linear-gradient(135deg, var(--accent), #9b5cff);
+      color:#fff;
+    }
+    .btn-ghost{
+      background: #f3f4f6;
+      color: var(--ink);
+    }
+    .icon{
+      width: 18px;
+      height: 18px;
+      display:inline-block;
+    }
+
+    .footer{
+      margin-top: 14px;
+      text-align:center;
+      color: rgba(255,255,255,.72);
+      font-size: 12px;
+    }
+
+    /* Fade-in */
+    .card{transform: translateY(10px); opacity:0; animation: in .7s ease forwards}
+    @keyframes in{to{transform:translateY(0); opacity:1}}
+
+    @media (min-width: 680px){
+      .top{padding: 30px 34px 0}
+      .content{padding: 20px 34px 26px; font-size: 17px}
+      .actions{padding: 0 34px 28px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="badge"><span class="dot"></span> Carta virtual • Para Vilma</div>
+      <h1 class="title">Gracias por estar ❤️</h1>
+      <p class="subtitle">Una carta hecha con cariño, para que la guardes cuando quieras volver a leerla.</p>
+    </div>
+
+    <main class="card" role="main" aria-label="Carta para Vilma">
+      <div class="top">
+        <div class="to">
+          <small>Para</small>
+          <strong>Vilma</strong>
+        </div>
+        <div class="meta">
+          <div id="date"></div>
+          <div>Con todo mi cariño</div>
+        </div>
+      </div>
+
+      <div class="content">
+        <p><strong>Querida hermana Vilma:</strong></p>
+
+        <p>
+          Quiero escribirte esta carta para agradecerte desde lo más profundo de mi corazón.
+          Gracias por el apoyo que me brindaste al cubrir el gasto de mi curso en Brasil.
+          Me siento inmensamente agradecido con la vida por tener una hermana tan maravillosa como tú.
+        </p>
+
+        <p>
+          Desde que era pequeño siempre estuviste ahí, apoyándome en los estudios y alimentando mi curiosidad.
+          Hasta hoy recuerdo con mucho cariño esos tres libros que me regalaste: el de zoología, el de botánica
+          y el del cuerpo humano. Sin darte cuenta, sembraste en mí las ganas de aprender, de preguntar y de querer ir más allá.
+        </p>
+
+        <p>
+          También quiero agradecerte por todas las oportunidades que me diste para aprender fuera de los libros:
+          mandarme al taller, a la ferretería, acompañar a mi cuñado y, sobre todo, enseñarme a observar y a prestar atención.
+          Esa habilidad hoy me acompaña en mi día a día y me ayuda a encontrar oportunidades donde otros no siempre logran verlas.
+        </p>
+
+        <p>
+          Gracias también por esos gestos silenciosos que marcaron mi vida:
+          por darme un plato de comida adicional, por esos días en los que mis padres se iban,
+          Nelly aún no despertaba, o simplemente me llamabas a tu cocina y me ofrecías un plato más,
+          un juguito o una fruta. Tal vez para ti fueron detalles simples, pero para mí significaron cuidado, hogar y amor.
+        </p>
+
+        <p>
+          Hermana, sé que no soy una persona que se expresa mucho y que no siempre escribo o llamo,
+          pero eso no significa que me haya olvidado de mi familia.
+          A ustedes los llevo siempre en el corazón, y no hay día en que no piense en cómo están.
+        </p>
+
+        <p>
+          Soy el resultado de buenas influencias en mi vida, y mi familia —tú en especial— es un pilar fundamental
+          en el hombre que me estoy convirtiendo. Gracias por creer en mí, por confiar y por estar, incluso sin que yo lo diga.
+        </p>
+
+        <div class="sign">
+          <div class="sig-left">
+            <div class="muted">Con todo mi cariño,</div>
+            <div class="name">Nacho</div>
+          </div>
+          <div class="hearts" aria-hidden="true">💜💚</div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn-primary" onclick="window.print()" title="Imprimir o guardar en PDF">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M7 8V4h10v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M7 17H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M7 14h10v6H7z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          Guardar / Imprimir
+        </button>
+
+        <button class="btn-ghost" onclick="copyLinkHint()" title="Tip para compartir el link">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M10 13a5 5 0 0 1 0-7l1.5-1.5a5 5 0 0 1 7 7L17 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M14 11a5 5 0 0 1 0 7L12.5 19.5a5 5 0 0 1-7-7L7 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          ¿Cómo compartir el link?
+        </button>
+      </div>
+
+      <div class="ribbon" aria-hidden="true"></div>
+    </main>
+
+    <div class="footer">Hecho con amor. Puedes guardar esto como PDF cuando quieras.</div>
+  </div>
+
+  <script>
+    // Fecha local
+    const d = new Date();
+    const opts = { year: "numeric", month: "long", day: "numeric" };
+    document.getElementById("date").textContent = d.toLocaleDateString("es-PE", opts);
+
+    function copyLinkHint(){
+      alert("Para enviar un link, súbelo a GitHub Pages (te explico abajo). Luego copias el link y se lo mandas por WhatsApp 🙂");
+    }
+  </script>
+</body>
+</html>
